@@ -1,5 +1,311 @@
-<center>
-<img src="new.png" width="100%"/>
-<br/>
-<img src="ceu_codecamp.jpg"/>
-</center>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sefrille Daluz - Web and App Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      background-color: #000000;
+      color: white;
+      padding: 30px 0;
+      text-align: center;
+      z-index: 100;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+
+    header nav {
+      margin-top: 15px;
+    }
+
+    header nav a {
+      margin: 0 25px;
+      font-size: 1.1em;
+      color: white;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    header nav a:hover {
+      color: #e74c3c;
+      transform: scale(1.1);
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #2980b9, #8e44ad);
+      color: white;
+      padding: 120px 20px;
+      text-align: center;
+      margin-bottom: 70px;
+      border-bottom: 5px solid #2d0052;
+      box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .hero h2 {
+      font-size: 3em;
+      margin-bottom: 20px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .hero p {
+      font-size: 1.3em;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 20px;
+      font-weight: 300;
+      line-height: 1.8;
+    }
+
+    .container {
+      width: 85%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 50px 0;
+    }
+
+    .profile-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 50px;
+      flex-wrap: wrap;
+    }
+
+    .profile-header .left {
+      flex: 1;
+      margin-right: 20px;
+    }
+
+    .profile-header .left h3 {
+      font-size: 2.2em;
+      color: #2c3e50;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .profile-header .left p {
+      font-size: 1.2em;
+      color: #34495e;
+      font-weight: 300;
+      line-height: 1.8;
+    }
+
+    .contact-info {
+      flex: 1;
+      text-align: right;
+    }
+
+    .contact-info p {
+      font-size: 1.2em;
+      color: #34495e;
+      margin-bottom: 15px;
+      font-weight: 300;
+    }
+
+    .contact-info p a {
+      color: #3c1694;
+      font-weight: 600;
+    }
+
+    .section-title {
+      font-size: 2.5em;
+      color: #2c3e50;
+      margin-bottom: 40px;
+      text-align: center;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .section-item {
+      background-color: #ffffff;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    .section-item h3 {
+      font-size: 1.6em;
+      font-weight: 600;
+      color: #2980b9;
+      margin-bottom: 10px;
+    }
+
+    .section-item ul {
+      list-style-type: none;
+      margin-top: 10px;
+      padding-left: 20px;
+    }
+
+    .section-item ul li {
+      font-size: 1.1em;
+      color: #34495e;
+      margin-bottom: 8px;
+    }
+
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      padding: 30px 0;
+      text-align: center;
+      font-size: 1.2em;
+      font-weight: 300;
+    }
+
+    footer p {
+      margin-top: 10px;
+    }
+
+    /* Responsive Design */
+    @media screen and (max-width: 768px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      .hero h2 {
+        font-size: 2.5em;
+      }
+
+      .profile-header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .profile-header .left, .profile-header .contact-info {
+        flex: none;
+        margin-bottom: 30px;
+      }
+
+      .contact-info p {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sefrille Daluz</h1>
+    <nav>
+      <a href="#profile">Profile</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero" id="profile">
+    <h2>Web and App Developer</h2>
+    <p>Innovative Web and App Developer with a strong track record in building and optimizing user-focused digital solutions. Experienced in leveraging modern technologies to create high-performance, responsive websites and applications. Dedicated to continuous learning and staying current with industry trends to drive impactful and effective development.</p>
+  </div>
+
+  <div class="container">
+    <section id="profile">
+      <div class="profile-header">
+        <div class="left">
+          <h3>About Me</h3>
+          <p>Innovative Web and App Developer with a strong track record in building and optimizing user-focused digital solutions. Experienced in leveraging modern technologies to create high-performance, responsive websites and applications. Dedicated to continuous learning and staying current with industry trends to drive impactful and effective development.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="section-item">
+        <h3>Technical Skills</h3>
+        <ul>
+          <li>Android Platform</li>
+          <li>Android Studio: workspace configuration, project / target configuration, build configuration, and debugging</li>
+          <li>Background in Java, C# and Python</li>
+          <li>Expertise in JavaScript, HTML, and CSS</li>
+          <li>Proficiency in UX/UI Design</li>
+          <li>Databases: MySQL, Firebase</li>
+        </ul>
+      </div>
+
+      <h2 class="section-title">Soft Skills</h2>
+      <div class="section-item">
+        <h3>Soft Skills</h3>
+        <ul>
+          <li>Strong collaboration and team leadership abilities</li>
+          <li>Attention to detail</li>
+          <li>Excellent problem-solving skills</li>
+          <li>Time management</li>
+          <li>Creativity</li>
+          <li>Detail-oriented with a keen eye for aesthetics</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2 class="section-title">Education</h2>
+      <div class="section-item">
+        <h3>Bachelor of Science in Information Technology</h3>
+        <p><strong>Institution:</strong> STI College - Balagtas, Province of Bulacan, Philippines</p>
+        <p><strong>Expected Graduation:</strong> June 2025</p>
+        <ul>
+          <li>Advanced Database Systems</li>
+          <li>Object-Oriented Programming</li>
+          <li>Event-Driven Programming</li>
+          <li>Integrative Programming</li>
+          <li>Mobile Systems and Technologies</li>
+          <li>Web Systems and Technologies</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="interest">
+      <h2 class="section-title">Interests</h2>
+      <div class="section-item">
+        <ul>
+          <li>Reading</li>
+          <li>Learning languages</li>
+          <li>Tech trends</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2 class="section-title">Contact</h2>
+      <div class="section-item contact-info">
+        <p><strong>Address:</strong> A139 P. Castro St., Borol 1st, Balagtas, Bulacan, 3016</p>
+        <p><strong>Phone:</strong> <a href="tel:+639195498540">09195498540</a></p>
+        <p><strong>Email:</strong> <a href="mailto:daluzsefrille@gmail.com">daluzsefrille@gmail.com</a></p>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
